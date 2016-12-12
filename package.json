@@ -1,0 +1,39 @@
+{
+    "name": "css-studies-web-design",
+    "version": "0.0.0",
+    "description": "css studies, web design",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/suxxus-css-studies/web-design.git"
+    },
+    "devDependencies": {
+        "browser-sync": "2.13.0",
+        "del": "2.2.2",
+        "gulp": "3.9.1",
+        "gulp-batch": "1.0.5",
+        "gulp-clean-css": "2.0.13",
+        "gulp-htmlmin": "3.0.0",
+        "gulp-plumber": "1.1.0",
+        "gulp-watch": "4.3.11",
+        "proxy-middleware": "0.15.0",
+        "updtr": "0.2.1",
+        "watch-cli": "0.2.1"
+    },
+    "engines": {
+        "node": ">=5.10.0",
+        "npm": ">=3.8.0"
+    },
+    "scripts": {
+        "browsersync": "node browser-sync",
+        "build": "gulp build",
+        "dev": "gulp dev",
+        "check": "npm outdated --depth=0",
+        "start": "npm run browsersync",
+        "update": "updtr"
+    },
+    "author": "SUXXUS",
+    "license": "ISC",
+    "keywords": [
+        "studies, css"
+    ]
+}

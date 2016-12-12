@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <style>
+    body {
+        font-size: 62.5%/1.5;
+        font-family: sans-serif;
+    }
+
+    .container {
+        display: flex;
+        min-height: 500px;
+        background-color: bisque;
+        border: 1px dashed;
+        margin-top: 12px;
+    }
+
+    .container div {
+        width: 100px;
+        height: 100px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 100px;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .a {
+        background-color: #659ABF;
+    }
+
+    .a div {
+        background-color: #72D8AA;
+        margin: auto;
+    }
+
+    .b {
+        background-color: #7D107C;
+        flex-wrap: wrap;
+    }
+
+    .b div {
+        background-color: #A465BF;
+        margin: auto;
+    }
+
+    .c {
+        background-color: #BFDA6B;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .c div {
+        background-color: #86826D;
+    }
+
+    @media all and (max-width: 800px) {
+        .c {
+            /* When on medium sized screens, we center it by evenly distributing empty space around items */
+            justify-content: space-around;
+        }
+    }
+    /* Small screens */
+    @media all and (max-width: 500px) {
+        .c {
+            /* On small screens, we are no longer using row direction but column */
+            flex-direction: column;
+        }
+        .c div {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>web design</h1>
+        <h2>flex-box</h2>
+        <h3>Ref: <a href="https://envato.com/blog/css3-flexbox/">Understanding CSS3 Flexbox for Responsive Design</a></h3>
+        <hr />
+        <div class="container a">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
+            <div>f</div>
+            <div>g</div>
+        </div>
+        <div class="container b">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
+            <div>f</div>
+            <div>g</div>
+        </div>
+        <div class="container c">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+            <div>d</div>
+            <div>f</div>
+            <div>g</div>
+        </div>
+    </diV>
+</body>
+
+</html>
